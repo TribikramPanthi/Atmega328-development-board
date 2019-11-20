@@ -1,0 +1,209 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:development board-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "30 dec 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA32-P IC?
+U 1 1 586606F1
+P 5800 3950
+F 0 "IC?" H 4950 5830 40  0000 L BNN
+F 1 "ATMEGA32-P" H 6250 2000 40  0000 L BNN
+F 2 "DIL40" H 5800 3950 30  0000 C CIN
+F 3 "" H 5800 3950 60  0000 C CNN
+	1    5800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL X?
+U 1 1 58660716
+P 4050 2850
+F 0 "X?" H 4050 3000 60  0000 C CNN
+F 1 "CRYSTAL" H 4050 2700 60  0000 C CNN
+F 2 "~" H 4050 2850 60  0000 C CNN
+F 3 "~" H 4050 2850 60  0000 C CNN
+	1    4050 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 58660725
+P 3500 2550
+F 0 "C?" H 3500 2650 40  0000 L CNN
+F 1 "C" H 3506 2465 40  0000 L CNN
+F 2 "~" H 3538 2400 30  0000 C CNN
+F 3 "~" H 3500 2550 60  0000 C CNN
+	1    3500 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 58660732
+P 3550 3200
+F 0 "C?" H 3550 3300 40  0000 L CNN
+F 1 "C" H 3556 3115 40  0000 L CNN
+F 2 "~" H 3588 3050 30  0000 C CNN
+F 3 "~" H 3550 3200 60  0000 C CNN
+	1    3550 3200
+	0    -1   -1   0   
+$EndComp
+Text Label 6800 5150 0    60   ~ 0
+int0
+Text Label 6800 5250 0    60   ~ 0
+int1
+Text Label 6800 3350 0    60   ~ 0
+int2
+Text Label 6800 3650 0    60   ~ 0
+mosi
+Text Label 6800 3750 0    60   ~ 0
+miso
+Text Label 6800 3850 0    60   ~ 0
+sck
+Text Label 6800 4050 0    60   ~ 0
+scl
+Text Label 6800 4150 0    60   ~ 0
+sda
+Text GLabel 5750 5950 0    60   Input ~ 0
+gnd
+Text GLabel 5850 5950 2    60   Input ~ 0
+gnd
+Wire Wire Line
+	3750 3200 4800 3200
+Wire Wire Line
+	4050 3200 4050 3150
+Wire Wire Line
+	4800 3200 4800 3050
+Connection ~ 4050 3200
+Wire Wire Line
+	3700 2550 4800 2550
+Wire Wire Line
+	4800 2550 4800 2650
+Connection ~ 4050 2550
+Text GLabel 3350 3200 0    60   Input ~ 0
+gnd
+Text GLabel 3300 2550 0    60   Input ~ 0
+gnd
+Text Label 5650 1950 0    60   ~ 0
+vcc
+$Comp
+L R R?
+U 1 1 5866087C
+P 4400 1650
+F 0 "R?" V 4480 1650 40  0000 C CNN
+F 1 "R" V 4407 1651 40  0000 C CNN
+F 2 "~" V 4330 1650 30  0000 C CNN
+F 3 "~" H 4400 1650 30  0000 C CNN
+	1    4400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 586608CE
+P 4150 2150
+F 0 "SW?" H 4300 2260 50  0000 C CNN
+F 1 "SW_PUSH" H 4150 2070 50  0000 C CNN
+F 2 "~" H 4150 2150 60  0000 C CNN
+F 3 "~" H 4150 2150 60  0000 C CNN
+	1    4150 2150
+	1    0    0    -1  
+$EndComp
+Text Label 4400 1400 0    60   ~ 0
+vcc
+Wire Wire Line
+	4400 1900 4400 2100
+Wire Wire Line
+	4400 2100 4450 2100
+Wire Wire Line
+	4450 2100 4450 2150
+Wire Wire Line
+	4450 2150 4800 2150
+Wire Wire Line
+	4800 2150 4800 2250
+Text GLabel 3850 2150 0    60   Input ~ 0
+gnd
+$Comp
+L CONN_2 P?
+U 1 1 58660F17
+P 8050 2000
+F 0 "P?" V 8000 2000 40  0000 C CNN
+F 1 "CONN_2" V 8100 2000 40  0000 C CNN
+F 2 "" H 8050 2000 60  0000 C CNN
+F 3 "" H 8050 2000 60  0000 C CNN
+	1    8050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_8 P?
+U 1 1 58660F3B
+P 7950 3400
+F 0 "P?" V 7900 3400 60  0000 C CNN
+F 1 "CONN_8" V 8000 3400 60  0000 C CNN
+F 2 "" H 7950 3400 60  0000 C CNN
+F 3 "" H 7950 3400 60  0000 C CNN
+	1    7950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_8 P?
+U 1 1 58660F48
+P 7900 4300
+F 0 "P?" V 7850 4300 60  0000 C CNN
+F 1 "CONN_8" V 7950 4300 60  0000 C CNN
+F 2 "" H 7900 4300 60  0000 C CNN
+F 3 "" H 7900 4300 60  0000 C CNN
+	1    7900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_8 P?
+U 1 1 58660F4E
+P 7900 5300
+F 0 "P?" V 7850 5300 60  0000 C CNN
+F 1 "CONN_8" V 7950 5300 60  0000 C CNN
+F 2 "" H 7900 5300 60  0000 C CNN
+F 3 "" H 7900 5300 60  0000 C CNN
+	1    7900 5300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
